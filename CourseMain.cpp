@@ -18,5 +18,12 @@ int main(){
     cout << "My Course Address: " << &myCourse << endl;
     cout << "My Course Copy Address: " << &myCourseCopy << endl;
 
+    Instructor myInstructor = Instructor("Brown", "303");
+    Textbook myText = Textbook("Head First Java", "Sierra", 789);
+    Course thirdCourse = Course("Data Structures", &myInstructor, myText);
+
+    cout << "----------------------" << endl;
+    thirdCourse.print();
+
     return 0;
 }
