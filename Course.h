@@ -16,6 +16,7 @@ private:
     Textbook text;
 public:
     Course(string);
+    Course(string, Instructor*, Textbook);
     Course(const Course &);
     const Course& operator=(const Course&);
     void setInstructor(string, string);

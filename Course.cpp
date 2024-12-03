@@ -4,6 +4,14 @@ Course::Course(string c) : courseName(c), inst(nullptr), text("","",0)
 {
 }
 
+Course::Course(string c, Instructor* i, Textbook t){
+    courseName = c;
+    if(i != nullptr){
+        inst = new Instructor(i->getName(), i->getOffice());
+    }
+    text = t;
+}
+
 Course::Course(const Course& c) : courseName(c.courseName), inst(nullptr), text(c.text)
 {
     if(c.inst != nullptr){
