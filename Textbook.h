@@ -14,6 +14,9 @@ private:
 public:
 	Textbook();
 	Textbook(string, string, long int);
+	string getTitle() { return title; }
+	string getAuthor() { return author; }
+	long getISBN() { return isbn; }
 	void print();
 };
 

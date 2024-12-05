@@ -8,15 +8,15 @@
 
 using namespace std;
 
-class Course
-{
+class Course {
 private:
     string courseName;
     Instructor* inst = nullptr;
     Textbook text;
 public:
     Course(string);
-    Course(const Course &);
+    Course(string, Instructor*, Textbook);
+    Course(const Course&);
     const Course& operator=(const Course&);
     void setInstructor(string, string);
     void setTextbook(string, string, long);

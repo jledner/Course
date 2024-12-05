@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std; 
+using namespace std;
 
-Textbook::Textbook():Textbook("n/a", "n/a", 0) {}
+Textbook::Textbook() :Textbook("n/a", "n/a", 0) {}
 
 Textbook::Textbook(string title, string author, long int isbn) {
 	this->title = title;
